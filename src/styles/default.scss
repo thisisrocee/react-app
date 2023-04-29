@@ -1,0 +1,31 @@
+$color_white: #fff;
+$color_grey: #6b7280;
+$color_light: #eee;
+$color_purple: #8b5cf6;
+$color_pink: #ec4899;
+$color_crimson: crimson;
+$font-family_1: "Fira sans", sans-serif;
+$background-dark: #374151;
+$background-darker: #1f2937;
+$background-darkest: #111827;
+
+@function steps($number){
+  @return $number * 4px;
+}
+
+@mixin for-at-least ($min-width:600px, $max-width: 900px) {
+  @media only screen and (min-width: $min-width) and (max-width: $max-width) {
+    @content;
+  }
+}
+
+$phone: 600px;
+$tablet: 900px;
+$desktop: 1200px;
+
+
+@mixin at-least ($min-width:$phone) {
+  @media only screen and (min-width: $min-width) {
+    @content;
+  }
+}

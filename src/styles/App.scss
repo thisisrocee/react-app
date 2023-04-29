@@ -1,0 +1,94 @@
+@import "./default.scss";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-family_1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: $color_white;
+  background-color: $background-dark;
+}
+
+.new-task-form{
+  display: flex;
+}
+
+div {
+  padding: 1rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: $color_grey;
+    margin-bottom: 1rem;
+  }
+
+  input {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+  }
+}
+
+#todo-title {
+  flex: 1 1 0%;
+  background-color: $background-darker;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: $color_light;
+  font-size: 1.25rem;
+  &::placeholder {
+    color: $color_grey;
+  }
+}
+
+#todo-submit {
+  color: $color_pink;
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, $color_pink, $color_purple);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    opacity: 80%;
+  }
+  &:active {
+    opacity: 60%;
+  }
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: $color_grey;
+	margin-bottom: 1rem;
+}
