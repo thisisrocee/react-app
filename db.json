@@ -1,0 +1,10 @@
+{
+  "articles": [
+    {
+      "title": "New article 1",
+      "description": "New description 1",
+      "id": 1,
+      "category": "category 1"
+    }
+  ]
+}

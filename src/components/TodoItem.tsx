@@ -5,7 +5,7 @@ import { Button } from "./Button";
 
 type todoItemProps = {
   todo: Todo;
-  onCheckBoxChange: () => void;
+  onCheckBoxChange: () => void; 
   onDelete: () => void;
   onTodoSave: (newTitle: string) => void;
 };
@@ -46,15 +46,6 @@ export const TodoItem = ({
       </div>
 
       <div className="actions">
-        {/* <label htmlFor={todo.id}>
-            {todo.isDone ? "Done" : "Not done"}
-            <input
-              type="checkbox"
-              id={todo.id}
-              checked={todo.isDone}
-              onChange={onCheckBoxChange}
-            />
-          </label> */}
         <Button
           variant={isEdit ? "primary" : "secondary"}
           onButtonClick={() => {
